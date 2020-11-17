@@ -16,6 +16,16 @@ public class Scenario {
 	private GUIManager gui;
 
 	/* TO BE COMPLETED */
+	public Event getHead() {
+		return this.head;
+	}
+
+	public Scenario (GUIManager gui, Event headEvent) {
+		this.gui = gui;
+		this.head = headEvent;
+	}
+
+
 
 	/* MAIN */
 	public static void main(String[] args) {

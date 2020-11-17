@@ -3,7 +3,7 @@
  * Creation: 13 Jan. 2017, prost@lirmm.fr
  */
 package myUtils;
-//test
+
 /**
  * @author prost
  *
