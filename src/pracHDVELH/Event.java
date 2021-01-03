@@ -1,3 +1,4 @@
+  
 /**
  * File: NodeMultipleEvents.java
  * Creation: 7 nov. 2020, Jean-Philippe.Prost@univ-amu.fr
@@ -18,65 +19,46 @@ public class Event extends NodeMultiple {
 	public static final String PROMPT_ANSWER = "Answer: ";
 	public static final String WARNING_MSG_INTEGER_EXPECTED = "Please input a integer within range!";
 
-	private GUIManager gui;
-	private String playerAnswer = null;
-	private int chosenPath;
-	private int id;
-
-	public Event(GUIManager gui, String data){
-		this.gui = gui;
-		super.setData(data);
-	}
-
-	public Event(){
-		gui = new GUIManager();
-	}
-
-	@java.lang.Override
-	public String toString() {
-		return "Event #" + getId() + " ([class]):" + getData();
-	}
-
 	/**
 	 * @return the playerAnswer
 	 */
 	public String getPlayerAnswer() {
-		return playerAnswer;
+		/* TO BE COMPLETED */
 	}
 
 	/**
 	 * @param playerAnswer the playerAnswer to set
 	 */
 	public void setPlayerAnswer(String playerAnswer) {
-		this.playerAnswer = playerAnswer;
+		/* TO BE COMPLETED */
 	}
 
 	/**
 	 * @return the reader
 	 */
 	public Scanner getReader() {
-		return gui.getInputReader();
+		/* TO BE COMPLETED */
 	}
 
 	/**
 	 * @param reader the reader to set
 	 */
 	public void setReader(Scanner reader) {
-		gui.setInputReader(reader);
+		/* TO BE COMPLETED */
 	}
 
 	/**
 	 * @return the chosenPath
 	 */
 	public int getChosenPath() {
-		return chosenPath;
+		/* TO BE COMPLETED */
 	}
 
 	/**
 	 * @param chosenPath the chosenPath to set
 	 */
 	public void setChosenPath(int chosenPath) {
-		this.chosenPath = chosenPath;
+		/* TO BE COMPLETED */
 	}
 
 	/* Methods */
@@ -84,7 +66,7 @@ public class Event extends NodeMultiple {
 	 * @see pracHDVELH.NodeMultiple#getData()
 	 */
 	public String getData() {
-		return super.getData().toString();
+		/* TO BE COMPLETED */
 	}
 
 	/**
@@ -92,7 +74,7 @@ public class Event extends NodeMultiple {
 	 * @param data
 	 */
 	public void setData(String data) {
-		super.setData(data);
+		/* TO BE COMPLETED */
 	}
 
 	/**
@@ -100,7 +82,7 @@ public class Event extends NodeMultiple {
 	 */
 	@Override
 	public Event getDaughter(int i) {
-		return (Event) super.getDaughter(i);
+		/* TO BE COMPLETED */
 	}
 
 	/**
@@ -109,39 +91,33 @@ public class Event extends NodeMultiple {
 	 * @param i
 	 */
 	public void setDaughter(Event daughter, int i) {
-		super.setDaughter(daughter,i);
+		/* TO BE COMPLETED */
 	}
 
 	/**
 	 * @return the gui
 	 */
 	public GUIManager getGui() {
-		return gui;
+		/* TO BE COMPLETED */
 	}
 
 	/**
 	 * @param gui the gui to set
 	 */
 	public void setGui(GUIManager gui) {
-		this.gui = gui;
+		/* TO BE COMPLETED */
 	}
 
 	/**
 	 * @return the id
 	 */
 	public int getId() {
-		return id;
+		/* TO BE COMPLETED */
 	}
 
 	/* Methods */
 	/* TO BE COMPLETED */
-	public Event run(){
-		gui.output(getData());
-		int i = gui.getAnswer()-1;
-
-		if(i > NODE_MAX_ARITY)return null;
-		return getDaughter(i);
-	}
+	
 }
 
 // eof
