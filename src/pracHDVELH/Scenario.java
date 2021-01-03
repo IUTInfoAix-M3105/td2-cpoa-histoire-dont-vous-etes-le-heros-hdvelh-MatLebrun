@@ -1,14 +1,4 @@
-/**
- * File: ScenarioDG.java
- * Creation: 7 nov. 2020, Jean-Philippe.Prost@univ-amu.fr
- * Template étudiants
- */
-package pracHDVELH;
 
-/**
- * @author prost
- *
- */
 public class Scenario {
 	private static final String MSG_EMPTY_SCENARIO = "Sorry, no scenario was found.";
 	private static final String MSG_FINALE = "That's all folks!";
